@@ -1,0 +1,75 @@
+.auth__container{
+    align-items: center;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.auth__box-container{
+    background-color: $white;
+    box-shadow: 0px 3px $dark-grey;
+    border-radius: 15px;
+    display: flex;
+}
+
+.auth__box-containerLeft{
+    padding: 20px;
+    width: 250px;
+}
+
+.auth__box-containerRight{
+    width: 375px;
+    height: 400px;
+    border-radius: 15px;
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/12/45/beverage-1869598_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.auth__tittle{
+    color: darken($color: $primary, $amount: 50);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.auth__input{
+    color: $dark-grey;
+    border: 0px;
+    border-bottom: 1px solid lighten($color: $dark-grey, $amount: 30px);
+    margin-bottom: 10px;
+    font-size: 16px;
+    height: 20px;
+    width: 100%;
+
+    transition: border-bottom .3s ease;
+
+    &:focus{
+        border-bottom: 1px solid $primary;
+        outline: none;
+    }
+}
+
+.auth__social-networks{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.auth__alert-error{
+    background-color: red;
+    border-radius: 5px;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
